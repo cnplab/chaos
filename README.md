@@ -1,32 +1,11 @@
-# CHAOS
+# DEPRECATED REPOSITORY
 
-Chaos is a virtualization toolstack.
+The project has been moved to https://github.com/sysml/chaos
+please use this url instead.
 
-The project is composed of a library, called `libh2`, that provides all
-necessary functionality required to create, destroy and generally manage
-virtual machines, and a set of applications, namely `chaos`, that implement a
-user interface through a CLI or eventually other mechanisms.
+If you have already cloned the project all you need to do is to run
+this command:
 
-# Build
-
-## Dependencies
-
-To build chaos you need to install the following dependencies:
-
-* libjansson
-
-You will also need Xen 4.7 built from source. Unfortunately it isn't possible
-to build libh2 from installed xen headers due to dependencies of libxc that
-aren't installed.
-
-
-## Build
-
-1. Run `make configure`
-2. Edit `.config` appropriately
-3. Run `make`
-
-
-# Install
-
-After build just run `sudo make install`.
+```bash
+git remote set-url origin https://github.com/sysml/chaos.git
+```
